@@ -1,0 +1,39 @@
+[
+    {
+      "role": "Family Business Management",
+      "organisation": "",
+      "startDate": "May, 2021",
+      "endDate": "Present",
+      "experiences": [
+        "Managing rental and agriculture business",
+        "Inrease yearly growth by ~10-15%", 
+        "Gained effective time-management skill"]
+    },
+    {
+      "role": "Personal Goal Pursuit",
+      "organisation": "",
+      "startDate": "Aug, 2019",
+      "endDate": "Apr, 2024",
+      "experiences": [
+        "Comprehensive understanding of History, Political Science, Geography, Economics, Public Administration, Disaster Management", 
+        "Current affairs integration with static knowledge"]
+    },
+    {
+      "role": "Software Developer Intern",
+      "organisation": "Netcracker Pvt. Ltd.",
+      "startDate": "Jan, 2018",
+      "endDate": "July, 2018",
+      "experiences": [
+        "Worked on network virtualization",
+        "Development of microservices"]
+    },
+    {
+        "role": "Web Developer Trainee",
+        "organisation": "Netcracker Pvt. Ltd.",
+        "startDate": "Jan, 2017",
+        "endDate": "Nov, 2017",
+        "experiences": [
+          "Learned web development using Java",
+          "API basics and development"]
+    }
+  ]

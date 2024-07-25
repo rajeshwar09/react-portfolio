@@ -1,0 +1,183 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-family: var(--font-roboto);
+}
+
+.title span {
+    color: var(--color-primary);
+}
+
+.designation {
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 280px;
+    margin-bottom: 32px;
+    font-family: var(--font-roboto);
+}
+
+.designation span {
+    position: relative;
+}
+
+.designation span::before {
+    content: "Android Developer";
+    color: var(--color-primary);
+    animation: words 20s infinite;
+}
+
+.designation span::after {
+    content: "";
+    background-color: var(--color-bg);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--color-bg);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--color-primary);
+    }
+}
+@keyframes words {
+    0%,
+    20% {
+        content: "Web Developer";
+    }
+    21%,
+    40% {
+        content: "Frontend Developer";
+    }
+    41%,
+    60% {
+        content: "Python Developer";
+    }
+    61%,
+    80% {
+        content: "Educator";
+    }
+    81%,
+    100% {
+        content: "Freelancer"
+    }
+}
+
+@keyframes typing {
+    10%,
+    17%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+.description {
+    display: flex;
+    font-size: 24px;
+    font-family: var(--font-roboto);
+    margin-bottom: 56px;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+.contactBtn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 28px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.profileImg  {
+    margin-left: 40px;
+    z-index: 1;
+    top: 32px;
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--color-light);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+        margin-top: 56px;
+    }
+
+    .designation {
+        margin-left: 0;
+        justify-content: left;
+    }
+
+    .profileImg {
+        margin-left: 0;
+    }
+}
